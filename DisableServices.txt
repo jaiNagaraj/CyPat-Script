@@ -1,41 +1,41 @@
-"Microsoft FTP Service"
-"Net.Tcp Port Sharing Service"
-"Simple TCP/IP Services"
-"UPnP Device Host"
-"Telnet"
-"IIS Admin Service"
-"Print Spooler"
-"SSD Discovery Service"
-"Bluetooth Audio Gateway Service"
-"Bluetooth Support Service"
-"Computer Browser"
-"Downloaded Maps Manager"
-"Geolocation Service"
-"Infrared monitor service"
-"Internet Connection Sharing"
-"Link-Layer Topology Discovery Mapper"
-"LxssManager"
-"Microsoft iSCSI Initiator Service"
-"OpenSSH SSH Server"
-"Peer Name Resolution Protocol"
-"Peer Networking Grouping"
-"Peer Networking Identity Manager"
-"PNRP Machine Name Publication Service"
-"Problem Reports and Solutions Control Panel Support"
-"Server"
-"SNMP Service"
-"Special Administration Console Helper"
-"SSDP Discovery"
-"Web Management Service"
-"Windows Error Reporting Service"
-"Windows Event Collector"
-"Windows Media Player Network Sharing Service"
-"Windows Mobile Hotspot Service"
-"Windows Push Notifications System Service"
-"Windows PushToInstall Service"
-"Windows Remote Management"
-"World Wide Web Publishing Service"
-"Xbox Accessory Management Service"
-"Xbox Live Auth Manager"
-"Xbox Live Game Save"
-"Xbox Live Networking Service"
+Microsoft FTP Service
+Net.Tcp Port Sharing Service
+Simple TCP/IP Services
+UPnP Device Host
+Telnet
+IIS Admin Service
+Print Spooler
+SSD Discovery Service
+Bluetooth Audio Gateway Service
+Bluetooth Support Service
+Computer Browser
+Downloaded Maps Manager
+Geolocation Service
+Infrared monitor service
+Internet Connection Sharing
+Link-Layer Topology Discovery Mapper
+LxssManager
+Microsoft iSCSI Initiator Service
+OpenSSH SSH Server
+Peer Name Resolution Protocol
+Peer Networking Grouping
+Peer Networking Identity Manager
+PNRP Machine Name Publication Service
+Problem Reports and Solutions Control Panel Support
+Server
+SNMP Service
+Special Administration Console Helper
+SSDP Discovery
+Web Management Service
+Windows Error Reporting Service
+Windows Event Collector
+Windows Media Player Network Sharing Service
+Windows Mobile Hotspot Service
+Windows Push Notifications System Service
+Windows PushToInstall Service
+Windows Remote Management
+World Wide Web Publishing Service
+Xbox Accessory Management Service
+Xbox Live Auth Manager
+Xbox Live Game Save
+Xbox Live Networking Service
