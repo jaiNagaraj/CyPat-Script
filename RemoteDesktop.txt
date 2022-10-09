@@ -1,9 +1,10 @@
-"Remote Registry"
-"Remote Desktop Services"
-"Remote Access Auto Connection Manager"
-"Remote Access Connection Manager"
-"Remote Desktop Configuration"
-"Remote Desktop Services UserMode Port Redirector"
-"Remote Procedure Call (RPC)"
-"Remote Procedure Call (RPC) Locator"
-"Routing and Remote Access"
+Remote Registry
+Remote Desktop Services
+Remote Access Auto Connection Manager
+Remote Access Connection Manager
+Remote Desktop Configuration
+Remote Desktop Services UserMode Port Redirector
+Remote Procedure Call (RPC)
+Remote Procedure Call (RPC) Locator
+Routing and Remote Access
+Windows Remote Management 

@@ -14,6 +14,7 @@ Copy-Item -Path C:/Users/$user/Desktop/Script/GroupPolicy -Destination C:/Window
 gpupdate /force
 
 Write-Host "Cleaning hosts file:"
+Rename-Item -Path "C:/Windows/system32/drivers/etc/hosts" -NewName "oldhosts"
 Copy-Item -Path C:/Users/$user/Desktop/Script/hosts -Destination C:/Windows/system32/drivers/etc -Force
 
 Write-Host "Turning on firewall and shutting off some ports (you will still have internet access, no worries):"
