@@ -1,0 +1,7 @@
+"Remote Registry"
+"Remote Desktop Services"
+"Remote Access Auto Connection Manager"
+"Remote Desktop Configuration"
+"Remote Desktop Services UserMode Port Redirector"
+"Remote Procedure Call (RPC) Locator"
+"Routing and Remote Access"
