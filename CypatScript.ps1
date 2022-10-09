@@ -31,7 +31,7 @@ try
 catch
 {
 	Write-Host "Looks like the Windows Firewall service was either already running or does not exist (which is fine)."
-}
+} 
 
 NetSh Advfirewall set allprofiles state on
 Set-NetFirewallProfile -Name Public –DefaultInboundAction Block
