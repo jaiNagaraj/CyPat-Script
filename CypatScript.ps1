@@ -102,37 +102,39 @@ net user Administrator /active:no
 
 #pip install bs4
 #python getData.py $user
-Write-Host "This next step will take care of user/admin stuff for you."
-Write-Host "HOWEVER, this requires that you have filled out the users.txt file and the admins.txt file with the list of users and admins (line by line with just names)."
-Read-Host "Press Enter to confirm that everything is set up and you are ok to proceed."
+#Write-Host "This next step will take care of user/admin stuff for you."
+#Write-Host "HOWEVER, this requires that you have filled out the users.txt file and the admins.txt file with the list of users and admins (line by line with just names)."
+#Read-Host "Press Enter to confirm that everything is set up and you are ok to proceed."
+#
+#Write-Host "Deleting all unauthorized users and fixing group of admins:"
+#$userData = @(Get-Content -Path C:/Users/$user/Desktop/Script/users.txt)
+#$adminData = @(Get-Content -Path C:/Users/$user/Desktop/Script/admins.txt)
+##$userList = @(Get-WmiObject -Class Win32_UserAccount | Format-wide -property name -column 1)
+#$admins = net localgroup administrators
+#$admins = @($admins[6..($admins.Length-3)])
+#foreach ($i in Get-WmiObject -Class Win32_UserAccount -filter 'LocalAccount=true' | Select-Object name)
+#{
+#	$i = "" + $i
+#	$i = $i.Substring(7,$i.length - 1 - 7)
+#	if ($i -eq "WDAGUtilityAccount" -or $i -eq "DefaultAccount" -or $i -eq "Administrator" -or $i -eq "Guest" -or $i -eq $user)
+#	{
+#		continue
+#	}
+#	if (-not ($userData -match $i) -or (-not($adminData -match $i)))
+#	{
+#		Remove-LocalUser -Name $i
+#	}
+#	elseif (-not ($adminData -match $i))
+#	{
+#		Remove-LocalGroupMember -Group "Administrators" -Member $i
+#	}
+#	elseif (($adminData -match $i) -and (-not ($admins -match $i)))
+#	{
+#		Add-LocalGroupMember -Group "Administrators" -Member $i
+#	}
+#}
 
-Write-Host "Deleting all unauthorized users and fixing group of admins:"
-$userData = @(Get-Content -Path C:/Users/$user/Desktop/Script/users.txt)
-$adminData = @(Get-Content -Path C:/Users/$user/Desktop/Script/admins.txt)
-$userList = @(Get-WmiObject -Class Win32_UserAccount | Format-wide -property name -column 1
-)
-$admins = net localgroup administrators
-$admins = @($admins[6..($admins.Length-3)])
-foreach ($actual in $userList)
-{
-	if ($actual -eq "WDAGUtilityAccount" -or $actual -eq "DefaultAccount" -or $actual -eq "Administrator" -or $actual -eq "Guest" -or $actual -eq $user){
-		continue
-	}
-	if (-not (($userData -match $actual) -or (-not($adminData -match $actual))))
-	{
-		Remove-LocalUser -Name $actual
-	}
-	if (($userData -match $actual ) -and (-not ($adminData -match $actual)))
-	{
-		Remove-LocalGroupMember -Group "Administrators" -Member $actual
-	}
-	if (($adminData -match $actual) -and (-not ($admins -match $actual)))
-	{
-		Add-LocalGroupMember -Group "Administrators" -Member $actual
-	}
-}
-
-<#$deleteUser = Read-Host "Would you like to delete a user? Enter Y or N."
+$deleteUser = Read-Host "Would you like to delete a user? Enter Y or N."
 while ($deleteUser -ne 'Y' -and $deleteUser -ne 'N')
 {
 	$deleteUser = Read-Host "Invalid response. Enter either uppercase Y or uppercase N."
@@ -150,7 +152,7 @@ while ($deleteUser -eq 'Y'){
 	}
 }
 Write-Host "No? Aw man..."
-#>
+
 $addUser = Read-Host "Would you like to add a user? Enter Y or N."
 while ($addUser -ne 'Y' -and $addUser -ne 'N')
 {
